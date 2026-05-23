@@ -89,7 +89,7 @@ export default function App() {
                 DriftLens
               </h1>
               <p className="hidden text-sm leading-tight text-gray-500 sm:block">
-                Spot spec drift before it ships
+                Paste. Compare. See the drift.
               </p>
             </div>
           </div>
