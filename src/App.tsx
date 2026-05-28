@@ -76,7 +76,7 @@ export default function App() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             {/* Brand mark */}
-            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand text-white">
+            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand text-white" aria-hidden="true">
               <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <circle cx="11" cy="11" r="8" />
                 <path d="m21 21-4.3-4.3" />
@@ -84,14 +84,7 @@ export default function App() {
                 <path d="M8 11h6" />
               </svg>
             </div>
-            <div>
-              <h1 className="text-lg font-bold tracking-tight text-gray-900">
-                DriftLens
-              </h1>
-              <p className="hidden text-sm leading-tight text-gray-500 sm:block">
-                Compare spec to implementation instantly.
-              </p>
-            </div>
+            <span className="text-lg font-bold tracking-tight text-gray-900">DriftLens</span>
           </div>
 
           <DriftScore
@@ -104,6 +97,18 @@ export default function App() {
       {/* Main Content */}
       <div className="flex flex-1 overflow-hidden">
         <main className="flex flex-1 flex-col overflow-hidden">
+          {/* SEO Heading + Supporting Copy */}
+          <div className="px-4 pt-5 sm:px-8 sm:pt-6 lg:px-10">
+            <h1 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+              Spec vs Implementation Diff
+            </h1>
+            <p className="mt-1.5 max-w-2xl text-sm leading-relaxed text-gray-600">
+              Compare spec to implementation side by side and instantly find differences
+              between what you planned and what was built. Detect requirement drift with
+              line-level highlighting and a severity score — no account needed.
+            </p>
+          </div>
+
           {/* Input Panels */}
           <div className="flex flex-1 flex-col gap-4 p-4 sm:flex-row sm:gap-5 sm:p-6 lg:p-8">
             <div className="flex-1 min-w-0">
