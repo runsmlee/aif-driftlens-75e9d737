@@ -100,12 +100,13 @@ export default function App() {
           {/* SEO Heading + Supporting Copy */}
           <div className="px-4 pt-5 sm:px-8 sm:pt-6 lg:px-10">
             <h1 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
-              Spec vs Implementation Diff
+              DriftLens
             </h1>
             <p className="mt-1.5 max-w-2xl text-sm leading-relaxed text-gray-600">
-              Compare spec to implementation side by side and instantly find differences
-              between what you planned and what was built. Detect requirement drift with
-              line-level highlighting and a severity score — no account needed.
+              Paste your spec and implementation for a line-by-line comparison.
+              Automatic change categorization flags every added, deleted, or modified
+              line, and a drift severity score from 0–100 quantifies requirement drift —
+              instantly, no account needed.
             </p>
           </div>
 
