@@ -11,6 +11,19 @@ describe('App', () => {
     localStorage.clear();
   });
 
+  it('renders the SEO heading with comparison copy', () => {
+    render(<App />);
+    const heading = screen.getByRole('heading', { level: 1 });
+    expect(heading).toHaveTextContent('Compare Spec vs Implementation — Instantly');
+  });
+
+  it('renders keyword-rich copy above the tool', () => {
+    render(<App />);
+    expect(screen.getByText(/spec diff/i)).toBeInTheDocument();
+    expect(screen.getByText(/drift detection/i)).toBeInTheDocument();
+    expect(screen.getByText(/0.*100 severity score/i)).toBeInTheDocument();
+  });
+
   it('renders both text input areas on load', () => {
     render(<App />);
     const textareas = screen.getAllByRole('textbox');
