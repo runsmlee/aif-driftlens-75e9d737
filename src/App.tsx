@@ -100,13 +100,12 @@ export default function App() {
           {/* SEO Heading + Supporting Copy */}
           <div className="px-4 pt-5 sm:px-8 sm:pt-6 lg:px-10">
             <h1 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
-              Compare Spec vs Implementation — Instantly
+              Compare Spec vs Implementation — Instant Diff Analysis
             </h1>
             <p className="mt-1.5 max-w-2xl text-sm leading-relaxed text-gray-600">
-              Paste your spec and implementation for an instant spec diff with
-              drift detection. Line-by-line implementation comparison flags every
-              added, deleted, or modified line, and a 0–100 severity score
-              quantifies drift — no account needed.
+              Compare documents — paste <strong>spec vs implementation</strong> to{' '}
+              <strong>find differences</strong> instantly.{' '}
+              <strong>Catch drift</strong> with line-by-line analysis and a 0–100 severity score.
             </p>
           </div>
 
