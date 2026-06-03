@@ -117,6 +117,7 @@ export default function App() {
                 value={specText}
                 onChange={setSpecText}
                 placeholder="Paste your spec text here..."
+                autoFocus
               />
             </div>
             <div className="flex-1 min-w-0">

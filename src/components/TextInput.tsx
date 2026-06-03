@@ -3,9 +3,10 @@ interface TextInputProps {
   onChange: (value: string) => void;
   label: string;
   placeholder?: string;
+  autoFocus?: boolean;
 }
 
-export function TextInput({ value, onChange, label, placeholder }: TextInputProps) {
+export function TextInput({ value, onChange, label, placeholder, autoFocus }: TextInputProps) {
   const charCount = value.length;
 
   return (
@@ -33,6 +34,7 @@ export function TextInput({ value, onChange, label, placeholder }: TextInputProp
           onChange={(e) => onChange(e.target.value)}
           placeholder={placeholder}
           aria-label={label}
+          autoFocus={autoFocus}
         />
       </div>
     </div>
