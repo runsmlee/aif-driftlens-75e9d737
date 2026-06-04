@@ -100,12 +100,15 @@ export default function App() {
           {/* SEO Heading + Supporting Copy */}
           <div className="px-4 pt-5 sm:px-8 sm:pt-6 lg:px-10">
             <h1 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
-              Compare Spec vs Implementation — Instant Diff Analysis
+              Compare Spec vs Implementation — Instantly
             </h1>
             <p className="mt-1.5 max-w-2xl text-sm leading-relaxed text-gray-600">
-              Compare documents — paste <strong>spec vs implementation</strong> to{' '}
-              <strong>find differences</strong> instantly.{' '}
-              <strong>Catch drift</strong> with line-by-line analysis and a 0–100 severity score.
+              Paste your specification and implementation side by side to run a{' '}
+              <strong>spec vs implementation diff</strong> in seconds.{' '}
+              <strong>Compare specification to code</strong> with line-by-line highlighting that
+              surfaces every added, deleted, or modified line.{' '}
+              <strong>Catch drift before rework</strong> — a single severity score tells you
+              instantly if what you built matches what you planned.
             </p>
           </div>
 

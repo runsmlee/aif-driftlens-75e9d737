@@ -14,16 +14,16 @@ describe('App', () => {
   it('renders the SEO heading with comparison copy', () => {
     render(<App />);
     const heading = screen.getByRole('heading', { level: 1 });
-    expect(heading).toHaveTextContent('Compare Spec vs Implementation — Instant Diff Analysis');
+    expect(heading).toHaveTextContent('Compare Spec vs Implementation — Instantly');
   });
 
   it('renders keyword-rich copy above the tool', () => {
     render(<App />);
     // 'spec vs implementation' appears in both H1 and paragraph copy
     expect(screen.getAllByText(/spec vs implementation/i).length).toBeGreaterThanOrEqual(1);
-    expect(screen.getByText(/find differences/i)).toBeInTheDocument();
-    expect(screen.getByText(/compare documents/i)).toBeInTheDocument();
-    expect(screen.getByText(/catch drift/i)).toBeInTheDocument();
+    expect(screen.getByText(/spec vs implementation diff/i)).toBeInTheDocument();
+    expect(screen.getByText(/compare specification to code/i)).toBeInTheDocument();
+    expect(screen.getByText(/catch drift before rework/i)).toBeInTheDocument();
   });
 
   it('renders both text input areas on load', () => {
