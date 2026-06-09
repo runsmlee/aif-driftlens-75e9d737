@@ -100,7 +100,7 @@ export default function App() {
           {/* SEO Heading + Supporting Copy */}
           <div className="px-4 pt-5 sm:px-8 sm:pt-6 lg:px-10">
             <h1 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
-              Compare Spec vs Implementation — Instantly
+              Spec vs Implementation Diff
             </h1>
             <p className="mt-1.5 max-w-2xl text-sm leading-relaxed text-gray-600">
               Paste your specification and implementation side by side to run a{' '}
